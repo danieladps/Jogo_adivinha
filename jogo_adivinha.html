@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+   
+
+
+
+        function pulaLinha(){
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function mostra(dois){
+            document.write(dois);
+            pulaLinha();
+        }
+         /*Math.random serve para gerar numero de acordo com a quatidade escolida, eu coloquei 100 */
+         /*Math.round ser para arredondar os numeros*/
+       
+            var numeroPensado = Math.round(Math.random()*100);
+            console.log (numeroPensado); /*console.log mostra as coisas no inspecionar na aba de console*/
+            var chute = parseInt(prompt("Digite seu chute!"));
+
+            if(chute==numeroPensado){
+            mostra("Você acertou");
+            }
+
+            else{
+            mostra("Você errou o número pensado foi "+ numeroPensado)
+            }
+
+
+
+    </script>
+</head>
+
+
+
+
+<body>
+    
+</body>
+</html>
